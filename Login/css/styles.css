@@ -12,10 +12,12 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: #f3f4f6;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  flex-direction: column; /* Organizar los elementos en una columna */
+  justify-content: center; /* Centrar el contenido verticalmente */
+  align-items: center; /* Centrar el contenido horizontalmente */
+  min-height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la pantalla */
   margin: 0;
+  padding: 0;
 }
 
 /* Contenedor centrado con sombra */
@@ -47,6 +49,24 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Estilo para el pie de página */
+footer {
+  margin-top: auto; /* Esto empuja el pie de página hacia el fondo */
+  font-size: 0.875rem; /* Tamaño de fuente pequeño */
+  color: #4A4A4A; /* Gris oscuro */
+  text-align: center;
+  padding: 1rem 0;
+  width: 100%; /* Asegura que el pie de página ocupe todo el ancho */
+  position: absolute; /* Lo coloca al fondo de la pantalla */
+  bottom: 0;
+}
+
+/* Estilo para destacar el nombre de la app */
+footer span {
+  font-weight: bold;
+  color: #007BFF; /* Azul para el nombre de la app */
+}
+
 /* Ajustes responsivos */
 @media (max-width: 640px) {
   .w-full {
@@ -54,5 +74,3 @@ a:hover {
   }
 }
 
-
-  
