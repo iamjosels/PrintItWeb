@@ -1,0 +1,110 @@
+/* Añadir transiciones suaves */
+input, button {
+    transition: all 0.3s ease;
+  }
+  
+  input:focus, button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Fondo para la página */
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Contenedor centrado con sombra */
+  .bg-white {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo para los campos de entrada */
+  input, select {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  input:focus, select:focus {
+    border-color: #3182ce;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(48, 130, 206, 0.4);
+  }
+  
+  /* Estilo para los botones */
+  button {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #3182ce;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #2b6cb0;
+    transform: scale(1.05);
+  }
+  
+  /* Estilo para el ícono de ojo */
+  .eye-icon {
+    position: absolute;
+    top: 50px;
+    right: 12px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  /* Estilo para los mensajes de alerta */
+  .alert {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 5px;
+  }
+  
+  /* Estilo para los contenedores de formulario */
+  /*form {
+    padding: 2rem;
+  }*/
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .form-container label {
+    font-size: 0.875rem;
+    color: #4a5568;
+  }
+  
+  /* Estilo de los enlaces */
+  a {
+    color: #3182ce;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Ajustes responsivos */
+  @media (max-width: 640px) {
+    .w-full {
+      width: 100%;
+    }
+  
+    .bg-white {
+      width: 90%;
+    }
+  }
+  

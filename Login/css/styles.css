@@ -1,0 +1,58 @@
+/* Añadir transiciones suaves */
+input, button {
+  transition: all 0.3s ease;
+}
+
+input:focus, button:hover {
+  transform: scale(1.05);
+}
+
+/* Fondo para la página */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Contenedor centrado con sombra */
+.bg-white {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 320px;
+}
+
+/* Estilo para el ícono del ojo */
+.eye-icon {
+  position: absolute;
+  top: 50px;
+  right: 12px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Estilo de los enlaces */
+a {
+  color: #1D4ED8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 640px) {
+  .w-full {
+    width: 100%;
+  }
+}
+
+
+  
